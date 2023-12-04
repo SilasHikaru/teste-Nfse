@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <title>NFS-e</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+    <body>
+        <main>
+        <section class="containerForm">
+        <h1>Formuário para NFS-e</h1>
+        <form onsubmit="return handleForm()" class="form">
+            
+            <h3 class="subtitulo">Serviço</h3>
+            <section class="form-servico">
+                <div>
+                    <p class="descInput">Descrição do Serviço</p>
+                    <input type="text" name="discriminacao" id="discriminacao">
+    
+                    <p class="descInput">Valor de Serviço</p>
+                    <input type="number" name="valorServico" id="valorServico" step="0.010">
+    
+                    <p class="descInput">Valor Dedução</p>
+                    <input type="number" name="valorDeducao" id="valorDeducao" step="0.010">
+
+                    <p class="descInput">Código CNAE</p>
+                    <input type="number" name="codigoCnae" id="codigoCnae">
+                </div>
+              
+                
+                <div>
+                    <p class="descInput">Item Lista Serviço</p>
+                    <input type="text" name="itemListaServico" id="itemListaServico">
+    
+                    <p class="descInput">Código Tributação de Município</p>
+                    <input type="text" name="codigoTributacaoMunicipio" id="codigoTributacaoMunicipio">
+    
+                    <p class="descInput">Código de Município</p>
+                    <input type="text" name="codigoMunicipio" id="codigoMunicipio">
+    
+                    <p class="descInput">Regime Tributário</p>
+                    <input type="radio" name="tipoLucro" value="presumido"
+                        id="presumido" class="tipoLucro" checked> Lucro Presumido
+    
+                    </input>
+                    <input type="radio" name="tipoLucro" value="real" 
+                        id="real" class="tipoLucro"> Lucro Real</input>
+                </div>
+               
+            </section>
+            <section class="form-prestador_tomador">
+                <div>
+                    <h3 class="subtitulo">Prestador</h3>
+    
+                    <p class="descInput">CPF/CNPJ Prestador</p>
+                    <input type="number" name="cpfCnpjPrestador" id="cpfCnpjPrestador">
+    
+                    <p class="descInput">Inscrição Municipal</p>
+                    <input type="number" name="inscricaoMunicipio" id="inscricaoMunicipio">
+                </div>
+                
+                <div>
+    
+                    <h3 class="subtitulo">Tomador</h3>
+    
+                    <p class="descInput">CPF/CNPJ Tomador</p>
+                    <input type="number" name="cpfCnpjTomador" id="cpfCnpjTomador">
+    
+                    <p class="descInput">Razão Social</p>
+                    <input type="text" name="razaoSocial" id="razaoSocial">
+    
+                </div>
+            </section>
+            
+            <input type="submit" class="enviar">
+        </form>
+        </section>
+        <section id="containerNfse">
+            <h2 class="nfse-titulo">Informações NFS-e</h2>
+        
+            <section class="nfse-servico">
+                <h3 class="subtitulo">Serviço</h3>
+                <p class="nfseInfo" id="nfse-emissao"></p>
+                <p class="nfseInfo" id="nfse-discriminacao"></p>
+                <p class="nfseInfo" id="nfse-valor"></p>
+                <p class="nfseInfo" id="nfse-deducao"></p>
+                <p class="nfseInfo" id="nfse-cnae"></p>
+                <p class="nfseInfo" id="nfse-itemLista"></p>
+                <p class="nfseInfo" id="nfse-tributacaoMunicipio"></p>
+                <p class="nfseInfo" id="nfse-codigoMunicipio"></p>
+                <p class="nfseInfo" id="nfse-baseCalculo"></p>
+                <p class="nfseInfo" id="nfse-aliquota">Alíquota: 2%</p>
+                <p class="nfseInfo" id="nfse-pis"></p>
+                <p class="nfseInfo"id="nfse-cofins"></p>
+                <p class="nfseInfo" id="nfse-irpj"></p>
+                <p class="nfseInfo" id="nfse-inss"></p>
+                <p class="nfseInfo" id="nfse-iss"></p>
+                <p class="nfseInfo" id="nfse-csll"></p>
+                
+            </section>  
+            <section class="nfse-prestador_tomador">
+                <h3 class="subtitulo">Prestador</h3>
+                <p class="nfseInfo" id="nfse-prestador"></p>
+                <p class="nfseInfo" id="nfse-inscricaoMunicipal"></p>
+        
+                <h3 class="subtitulo">Tomador</h3>
+                <p class="nfseInfo" id="nfse-tomador"></p>
+                <p class="nfseInfo" id="nfse-razaoSocial"></p>
+            </section>
+        </section>
+        <script src="./script.js"></script>
+        </main>
+    </body>
+</html>

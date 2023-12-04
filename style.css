@@ -1,0 +1,83 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-weight:500;
+    font-size:2rem;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form-servico{
+    display:flex;
+    gap:40px;
+   
+}
+
+.form-prestador_tomador{
+    display:flex;
+    gap:40px;
+ 
+}
+
+.subtitulo{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom:20px;
+    margin-top: 30px;
+}
+
+.descInput {
+    margin-bottom:10px;
+}
+
+input {
+   
+    margin-bottom:20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.enviar {
+    font-size: 1rem;
+    padding:8px 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 60px;
+    display: flex;
+    justify-content:center;
+    gap:80px;
+}
+
+.nfse-titulo{
+    font-weight:500;
+    font-size:2rem;
+    margin-bottom: 20px;
+}
+
+.nfseInfo{
+    margin-bottom:8px;
+}
+
+.nfse-servico{
+    margin-bottom: 20px;
+}
+
+.displayNone{
+    display: none;
+}
+
+
+
