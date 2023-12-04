@@ -1,2 +1,2 @@
 # teste-Nfse
-Este projeto simula a emissão das informações da nota fiscal de serviço.
+Este projeto tem a finalidade de simular a emissão das informações da nota fiscal de serviço.
